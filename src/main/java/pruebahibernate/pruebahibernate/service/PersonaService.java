@@ -7,8 +7,8 @@ import pruebahibernate.pruebahibernate.model.Persona;
 import pruebahibernate.pruebahibernate.repository.IPersonaRepository;
 
 @Service
-public class PersonaService implements IPersonaService{
-    
+public class PersonaService implements IPersonaService {
+
     @Autowired
     private IPersonaRepository persoRepo;
 
@@ -41,7 +41,7 @@ public class PersonaService implements IPersonaService{
         perso.setApellido(nuevoApellido);
         perso.setNombre(nuevoNombre);
         perso.setEdad(nuevaEdad);
-        
+
         this.savePersona(perso);
     }
 }
